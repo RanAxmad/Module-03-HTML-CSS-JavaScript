@@ -1,24 +1,35 @@
-body {
-  font-family: Arial, sans-serif;
+body,
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
 }
 
-.navbar {
-  margin-bottom: 0;
+.section {
+    min-height: 700px;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    scroll-margin-top: 60px;
 }
 
-/* Mobile menu background */
-.navbar-collapse {
-  background-color: #f8f8f8;
+@media (max-width: 767px) {
+    .navbar-collapse {
+        background-color: #e7e7e7;
+        width: 100%;
+    }
+
+    .navbar-collapse ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar-collapse li {
+        width: 100%;
+    }
 }
 
-.tall-section {
-  height: 1000px;
-  background-color: #e2e2e2;
-  padding: 20px;
-  text-align: center;
-  font-size: 24px;
-}
-
-h1 {
-  margin-bottom: 30px;
+h3 {
+    margin-top: 0;
 }
